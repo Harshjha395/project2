@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Ocean</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        section{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(images/background.png);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .signup-box{
+            position: relative;
+            width: 400px;
+            height: 450px;
+            background: transparent;
+            border: 2px solid rgba(255,255,255,.5);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            backdrop-filter:blur(15px);
+        }
+
+        h2{
+          font-size: 2rem;  
+          color: #ffffff;
+          text-align: center;
+        }
+
+        a{
+             text-decoration: none;
+            color: #000000;
+        }
+
+
+        .inputbox{
+            position: relative;
+            width: 310px;
+            margin: 30px 0;
+            border-bottom: 2px solid #ffffff;  
+        }
+
+        .inputbox label{
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            transform: translateY(-50%);
+            font-size: 1em;
+            color: #ffffff;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        input:focus ~ label,
+        input:valid ~label{
+            top: -5px;
+
+        }
+        
+
+        .inputbox input{
+            width: 100%;
+            height:50px ;
+            background: transparent;
+            border: none;
+            outline:none ;
+            font-size: 1em;
+            color: #ffffff;
+        }
+
+        .icon{
+            position: absolute;
+            right:8px;
+            color: #ffffff;
+            font-size: 1.2rem;
+            line-height: 57px;
+        }
+
+        .remember-forgot{
+            margin: -15px 0 15px;
+            font-size: .9rem;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .remember-forgot label input{
+            margin-right: 3px;
+        }
+
+        .remember-forgot a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .remember-forgot a:hover{
+            text-decoration: underline;
+        }
+
+        button{
+            width: 100%;
+            height: 40px;
+            background:#ffffff;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #000000;
+            font-weight: 500;
+        }
+
+        .log-in{
+            font-size: .9rem;
+            color:#ffffff;
+            text-align: center;
+            margin: 25px 0 10px;
+        }
+
+        .log-in p a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .log-in p a:hover{
+            text-decoration: underline;
+        }
+
+        .bubbles img{
+            width:50px;
+            animation: bubble 7s linear infinite;
+        }
+
+        .bubbles{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            bottom: -70px;
+        }
+
+        @keyframes bubble{
+            0%{
+                transform: translateY(0);
+                opacity: 0;
+            }
+            50%{
+        
+                opacity: 1;
+            }
+            70%{
+        
+                opacity: 1;
+            }
+            100%{
+                transform: translateY(-80vh);
+                opacity: 0;
+            }
+
+}
+
+.bubbles img:nth-child(1)
+{
+    animation-delay: 2s;
+    width: 25px;
+}
+ .bubbles img:nth-child(2)
+ {
+    animation-delay: 1s;
+ }
+ .bubbles img:nth-child(3)
+ {
+    animation-delay: 3s;
+    width: 25px;
+ }
+ .bubbles img:nth-child(4)
+ {
+    animation-delay: 4.5s;
+ }
+ .bubbles img:nth-child(5)
+ {
+    animation-delay: 3s;
+ }
+ .bubbles img:nth-child(6)
+ {
+    animation-delay: 6s;
+    width: 20px;
+ }
+ .bubbles img:nth-child(7)
+ {
+    animation-delay: 7s;
+    width: 35px;
+ }
+
+    </style>
+</head>
+
+<body>
+    <section>
+    <div class="signup-box">
+        <form action="">
+            <h2>Log In</h2>
+            <div class="inputbox">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" >
+                <label>Email</label>
+            </div>
+            <div class="inputbox">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" >
+                    <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot Password</a>
+            </div>
+            <button type="submit" onclick="alert('Welcome Back')"> <a href="first.html">Log In</a></button>
+            <div class="log-in">
+                <p> Don't have an account? . <a href="Signup.html">Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+    <div class="bubbles">
+        <img src="images/bubble.png" >
+        <img src="images/bubble.png" >
+        <img src="images/bubble.png" >
+        <img src="images/bubble.png" >
+        <img src="images/bubble.png" >
+        <img src="images/bubble.png" >
+        <img src="images/bubble.png" >
+    </div>
+    </section>
+</body>
+</html>

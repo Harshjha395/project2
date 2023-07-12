@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>NextGen Ocean</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sono', sans-serif;
+      margin: 0;
+
+    }
+
+    .pricing-container {
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 2rem;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(images/background.png);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pricing-plan {
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      background-color:transparent;
+      border: 2px solid rgba(255,255,255,.5);
+      border-radius: 5px;
+      text-align: center;
+      backdrop-filter:blur(15px);
+    }
+
+    .plan-title {
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .plan-price {
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .plan-features {
+      color: #ffffff;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+    }
+
+    .plan-features li {
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .plan-button {
+      padding: 10px;
+      background-color: #ff6600;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+      
+    }
+
+    .plan-button a{
+      text-decoration:none;
+      color: #ffffff;
+    }
+
+    @media (max-width: 1000px) {
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+
+    .bubbles img{
+            width:50px;
+            animation: bubble 7s linear infinite;
+        }
+
+        .bubbles{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            bottom: -70px;
+        }
+
+        @keyframes bubble{
+            0%{
+                transform: translateY(0);
+                opacity: 0;
+            }
+            50%{
+        
+                opacity: 1;
+            }
+            70%{
+        
+                opacity: 1;
+            }
+            100%{
+                transform: translateY(-80vh);
+                opacity: 0;
+            }
+
+}
+
+.bubbles img:nth-child(1)
+{
+    animation-delay: 2s;
+    width: 25px;
+}
+ .bubbles img:nth-child(2)
+ {
+    animation-delay: 1s;
+ }
+ .bubbles img:nth-child(3)
+ {
+    animation-delay: 3s;
+    width: 25px;
+ }
+ .bubbles img:nth-child(4)
+ {
+    animation-delay: 4.5s;
+ }
+ .bubbles img:nth-child(5)
+ {
+    animation-delay: 3s;
+ }
+ .bubbles img:nth-child(6)
+ {
+    animation-delay: 6s;
+    width: 20px;
+ }
+ .bubbles img:nth-child(7)
+ {
+    animation-delay: 7s;
+    width: 35px;
+ }
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">HTML</div>
+      <div class="plan-price">HTML tutorial or HTML 5 tutorial provides basic and advanced concepts of HTML.</div>
+      <ul class="plan-features">
+         <li>✅ Tim Berners-Lee </li>
+        <li>✅ In year 1993</li>
+        <li>✅ HTML5</li> 
+      </ul>
+      <button class="plan-button"><a href="ht.html">Know more</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">CSS</div>
+      <div class="plan-price">CSS stands for Cascading Style Sheets.It is used for designing a HTML page.</div>
+      <ul class="plan-features">
+        <li>✅ Håkon Wium Lie and Bert Bos </li>
+        <li>✅ In year 1996</li>
+        <li>✅ CSS3</li>
+      </ul>
+      <button class="plan-button"><a href="css.html"> Know more</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">JavaScript</div>
+      <div class="plan-price">Our JavaScript Tutorial is designed for beginners and professionals both.</div>
+      <ul class="plan-features">
+        <li>✅ Brendan Eich</li>
+        <li>✅ In 1995</li>
+        <li>✅ ECMAScript 2023</li>
+      </ul>  
+      <button class="plan-button"><a href="java.html"> Know more</a>
+    </div>
+    <div class="bubbles">
+      <img src="images/bubble.png" >
+      <img src="images/bubble.png" >
+      <img src="images/bubble.png" >
+      <img src="images/bubble.png" >
+      <img src="images/bubble.png" >
+      <img src="images/bubble.png" >
+      <img src="images/bubble.png" >
+  </div>
+  </div>
+
+</body>
+
+</html>

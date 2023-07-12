@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Studey Material</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sono', sans-serif;
+      background: url(images/background.png) no-repeat;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+
+
+
+    
+    .big{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing-container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 2rem;
+    }
+
+    .pricing-plan {
+      background-color: transparent;
+      flex: 1;
+      max-width: 1000px;
+      padding: 20px;
+      border: 2px solid rgba(255,255,255,.5);
+      border-radius: 5px;
+      text-align: center;
+      backdrop-filter:blur(15px);
+    }
+    .plan-price {
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    
+
+    @media (max-width: 1000px) {
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+    /* slid nav css */
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color:transparent;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      backdrop-filter:blur(15px);
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+      display: block;
+      transition: 0.3s;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+      background-color: green;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    #main {
+      transition: margin-left 0.5s;
+      padding: 16px;
+    }
+
+    .bubbles img{
+            width:50px;
+            animation: bubble 7s linear infinite;
+        }
+
+        .bubbles{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            bottom:-170px;
+        }
+
+        @keyframes bubble{
+            0%{
+                transform: translateY(0);
+                opacity: 0;
+            }
+            50%{
+        
+                opacity: 1;
+            }
+            70%{
+        
+                opacity: 1;
+            }
+            100%{
+                transform: translateY(-80vh);
+                opacity: 0;
+            }
+
+}
+
+.bubbles img:nth-child(1)
+{
+    animation-delay: 2s;
+    width: 25px;
+}
+ .bubbles img:nth-child(2)
+ {
+    animation-delay: 1s;
+ }
+ .bubbles img:nth-child(3)
+ {
+    animation-delay: 3s;
+    width: 25px;
+ }
+ .bubbles img:nth-child(4)
+ {
+    animation-delay: 4.5s;
+ }
+ .bubbles img:nth-child(5)
+ {
+    animation-delay: 3s;
+ }
+ .bubbles img:nth-child(6)
+ {
+    animation-delay: 6s;
+    width: 20px;
+ }
+ .bubbles img:nth-child(7)
+ {
+    animation-delay: 7s;
+    width: 35px;
+ }
+  </style>
+</head>
+
+<body>
+    <!-- slide nav -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Hhome.html">Introduction</a>
+        <a href="H_Into.html">Array</a>
+        <a href="H_Edi.html">ArrayBuffer</a>
+        <a href="H_Basic.html">AsyncGenerator</a>
+        <a href="H_Head.html">Atomics</a>
+        <a href="H_Css.html">Data Views</a>
+        <a href="H_color.html">Errors</a>
+        <a href="H_Link.html">Float</a>
+        <a href="H_Img.html">Function</a>
+        <a href="H_table.html">More</a>
+      </div>
+      
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+      </div>
+      <div class="big">
+      
+ 
+        <div class="pricing-plan">
+         
+          <div class="plan-price">
+            <h2>JavaScript reference</h2>
+            <p>The JavaScript reference serves as a repository of facts about the JavaScript language.
+               The entire language is described here in detail.
+               As you write JavaScript code, you'll refer to these pages often (thus the title "JavaScript reference").
+              <br>
+              The JavaScript language is intended to be used within some larger environment, be it a browser, server-side scripts, or similar.
+               For the most part, this reference attempts to be environment-agnostic and does not target a web browser environment.
+              <br>
+              If you are new to JavaScript, start with the guide. Once you have a firm grasp of the fundamentals, you can use the reference to get more details on individual objects and language constructs.
+              </p>
+              
+          </div>
+        </div>
+        <div class="bubbles">
+          <img src="images/bubble.png" >
+          <img src="images/bubble.png" >
+          <img src="images/bubble.png" >
+          <img src="images/bubble.png" >
+          <img src="images/bubble.png" >
+          <img src="images/bubble.png" >
+          <img src="images/bubble.png" >
+        </div>
+    </div>
+    
+  
+<!-- Script --> 
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+  
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+</body>
+
+</html>
